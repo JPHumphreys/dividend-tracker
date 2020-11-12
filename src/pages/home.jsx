@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/navbar';
+import Bar from '../components/bar';
 
 class Home extends Component {
     state = {}
@@ -7,6 +8,7 @@ class Home extends Component {
         return (
             <div>
                 <Navbar />
+                <Bar />
             </div>
         );
     }
