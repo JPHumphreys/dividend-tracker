@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
-import { XYPlot, VerticalBarSeries as BarSeries } from 'react-vis';
+import {
+    XYPlot,
+    XAxis,
+    YAxis,
+    VerticalBarSeries,
+} from 'react-vis';
 
 class BarGraph extends Component {
     state = {}
     render() {
         const data = [
-            { x: 'October 2020', y: 10 },
-            { x: 'November 2020', y: 5 },
-            { x: 'December 2020', y: 15 }
+            { x: 'October', y: 10 },
+            { x: 'November', y: 5 },
+            { x: 'December', y: 15 }
         ];
 
         return (
-            <XYPlot
-                height="500"
-                width="500">
-                <BarSeries data={data} color="steelblue" />
+            <XYPlot xType="ordinal" width={300} height={300} xDistance={100}>
+                <VerticalBarSeries className="vertical-bar-series-example" data={data} />
+                <XAxis />
+                <YAxis />
             </XYPlot>
 
         );
