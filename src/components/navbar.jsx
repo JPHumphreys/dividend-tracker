@@ -7,7 +7,7 @@ class NavbarComponent extends Component {
         return (
             <div>
                 <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="/">Dividend Tracker</Navbar.Brand>
+                    <Navbar.Brand href="">Dividend Tracker</Navbar.Brand>
                     <Nav className="mr-auto">
                     </Nav>
                 </Navbar>
