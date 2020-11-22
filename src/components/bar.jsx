@@ -5,9 +5,9 @@ class BarGraph extends Component {
     state = {}
     render() {
         const data = [
-            { x: 'October', y: 10 },
-            { x: 'November', y: 5 },
-            { x: 'December', y: 15 }
+            { x: 'October 2020', y: 10 },
+            { x: 'November 2020', y: 5 },
+            { x: 'December 2020', y: 15 }
         ];
 
         return (
